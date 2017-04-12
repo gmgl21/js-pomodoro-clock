@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>Pomodoro Clock</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Custom CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/pomodoro-clock.css" type='text/css'>
+</head>
+<body>
+  <div class="container">
+    <div class="timer-controls col-xs-12">
+      <div class="breakTimer col-xs-5 col-offset-lg-1">
+        <h5 id="break">Break Length</h5>
+        <button class="btn btn-primary time" id="minusBreak">-</button>
+        <display id="breakTime"></display>
+        <button class="btn btn-primary time" id="addBreak">+</button>
+      </div>
+      <div class=" sessionTimer col-xs-5 col-offset-lg-1">
+        <h5 id="session">Session Length</h5>
+        <button class="btn btn-primary time" id="minusSession">-</button>
+        <display id="sessionTime"></display>
+        <button class="btn btn-primary time" id="addSession">+</button>
+      </div>
+    </div>
+    <div id ="clock" class="clock">
+      <span id="min">00</span>:<span id="sec">00</span>
+    </div>
+    <div class="buttons">
+      <input type="button" class="btn btn-success button" value="Start" id="start">
+      <input type="button" class="btn btn-warning button" value="Pause" id="pause">
+      <input type="button" class="btn btn-info button" value="Resume" id="resume">
+      <input type="button" class="btn btn-danger button" value="Reset" id="reset">
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/pomodoro-clock.js"></script>
+</body>
+<div>
+<footer>
+  <p>Created and coded by <a href="https://github.com/gmgl21" target="_blank">Gloria Lee</a></p>
+</footer>
+</div>
+</html>
